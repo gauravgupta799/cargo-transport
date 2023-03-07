@@ -307,13 +307,113 @@ a:hover{
     color:white;
 }
 
+/* Solution Tailored Styles Start */
+.soltn-tailored-container{
+    background-image: url(./assets/images/st-light-bg.svg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width:100%;
+    height: 853.8px;
+    position: relative;
+    margin: 5rem 0rem 20rem 0rem;
+}
+.soltn-inner-container{
+    background-image: url(./assets/images/st-dark-bg.svg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width:100%;
+    height: 853.8px;
+    position: absolute;
+    top: 8%;
+}
+.soltn-top-conatiner{
+    color:white;
+    line-height: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+    padding-left: 4rem;
+}
+.soltn-top-conatiner >h2{
+    /* width: 120px; */
+    /* height: 131px; */
+    font-family: "blinker";
+    font-size: 60px;
+    font-weight: bold;
+    /* line-height: 72px; */
+    font-style: normal;
+    text-align: left;
+    color: #ffffff;
+}
+.solt-desc-wrapper{
+    width: 400px;
+    border-left: 4px solid white;
+}
+.solt-desc-wrapper >p{
+    width: 380px;
+    height: 81px;
+    font-family: "blinker";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    font-style: normal;
+    text-align: left;
+    color: #ffffff;
+    margin-left: 20px;
+}
+.soltn-bottom-conatiner{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: absolute;
+    top: 65%;
+    width: 100%;
+}
+.soltn-bottom-conatiner > .solt-arrow-btns{
+  display: flex;
+  align-items:flex-end;
+  justify-content: flex-end;
+}
+.img-wrapper{
+    position: relative;
+}
+.img-wrapper > .img-overlay-text{
+    width: 284px;
+    height: 21px;
+    font-family: "blinker";
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 48px;
+    font-style: normal;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 8%;
+    z-index: 1;
+    left: 15%;
+    color: white;
+    text-align: center;
+}
+.soltn-bottom-conatiner > .images-container{
+    display: flex;
+    padding-left: 3rem;
+    overflow-x: scroll;
+    /* gap:-10px; */
+}
+.soltn-bottom-conatiner > .images-container > .img-wrapper{
+    /* margin: 0px -60px; */
+}
+/* Solution Tailored Styles End */
+
 /* Testimonials Styles */
 .testimonials-container{
     display: flex;
     align-items: center;
     justify-content:space-between;
     gap:2rem;
-
 }
 .test-left-wrapper{
     /* border:1px solid red; */
