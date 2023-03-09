@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="glide.core.min.css">
+    <link rel="stylesheet" href="glide.theme.css">
     <title>Cargo Transport</title>
 </head>
 <body>
@@ -14,7 +16,7 @@
             <img src="./assets/images/cargo-transport.svg" alt="logo">
         </div>
         <ul>
-            <li><a href="">About</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="">Services</a></li>
             <li><a href="">Careers</a></li>
             <li><a href="">Contact</a></li>
@@ -63,14 +65,19 @@
   <!-- Landing Section End -->
 
     <!-- About Section Start -->
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="aboutLeft-side">
             <div class="projetsWrapper">
-                <h1>200+</h1>
+                <h1 style="display:flex" class="stats">
+                    <span class="stat" data-max="200">0</span>
+                    <span >+</span>
+                </h1>
                 <p>Projects Completed</p>
             </div>
             <div class="trucksNumWrapper">
-                <h1>224</h1>
+                <h1 >
+                    <span class="stat" data-max="224">0</span>
+                </h1>
                 <p>Trucks</p>
             </div>
         </div>
@@ -88,11 +95,10 @@
     </section>
    <!-- About Section End -->
 
-
    <!-- Solution Tailored Section Start -->
    <section class="soltn-tailored-container">
     <div class="soltn-inner-container">
-        <div class="soltn-top-conatiner">
+        <div class="soltn-top-container">
             <h2>Solutions Tailored</h2>
             <h2>to Your Needs</h2>
             <div class="solt-desc-wrapper">
@@ -103,21 +109,32 @@
                 </p>
             </div>
         </div>
-        <div class="soltn-bottom-conatiner">
-            <div class="arrow-btns-wrapper solt-arrow-btns">         
-                <button class="button-slanted">               
+        <div class="soltn-bottom-container">
+            <div class="arrow-btns-wrapper solt-arrow-btns glide__arrows" data-glide-el="controls">         
+                <button class="button-slanted glide__arrow glide__arrow--left">               
                     <span class="button-slanted-content">
                         <img src="./assets/images/lt-icon.svg" alt="">
                     </span>
                 </button>
-                <button class="button-slanted">               
+                <button class="button-slanted glide__arrow glide__arrow--right">               
                     <span class="button-slanted-content">
                         <img src="./assets/images/gt-icon.svg" alt="">
                     </span>
                 </button>
             </div>
             <div class="images-container">
-                <div class="img-wrapper">
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                      <ul class="glide__slides">
+                        <li class="glide__slide"><img src="./assets/images/st-1.svg" alt=""></li>
+                        <li class="glide__slide"><img src="./assets/images/st-2.svg" alt=""></li>
+                        <li class="glide__slide"><img src="./assets/images/st-3.svg" alt=""></li>
+                        <li class="glide__slide"><img src="./assets/images/st-4.svg" alt=""></li>
+                      </ul>
+                    </div>
+                </div> 
+               
+                <!-- <div class="img-wrapper">
                     <img src="./assets/images/st-1.svg" alt="">
                     <span class="img-overlay-text">Sand & Aggregate Deliveries</span>
                 </div>
@@ -132,53 +149,48 @@
                 <div class="img-wrapper">
                     <img src="./assets/images/st-4.svg" alt="">
                     <span class="img-overlay-text">Speciality Services</span>
-                </div>     
+                </div>     -->         
             </div>
         </div>
     </div>
    </section>
    <!-- Solution Tailored Section End -->
 
-
     <!-- Testimonial Section -->
     <section class="testimonials-container">
-        <div class="test-left-wrapper">
-            <h2>Testimonials</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-                sed diam nonumy eirmod tempor invidun
-            </p>
-        </div>
-        <div class="test-right-wrapper">
-            <img src="./assets/images/open-doubl.svg" alt="double-icon">
-            <p>
-                The Lorem Ipsum Company has been an integral part 
-                of our content marketing success. We have seen a notable increase
-                in organic leads since we began using their
-            </p>
-            <div class="authorWrapper">
-                <h3>Roland Weedon</h3>
-                <span>CEO & Founder Essex Mortgage</span>
+        <div class="testimonialWrapper">
+            <div class="test-left-wrapper">
+                <h2>Testimonials</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                    sed diam nonumy eirmod tempor invidun
+                </p>
             </div>
-            <div class="btn-container">
-                <!-- <button>View All</button> -->
-                <button class="button-slanted">               
+            <div class="test-right-wrapper ">
+                <div class="testimonial-desc-container">
+                    <img src="./assets/images/open-doubl.svg" alt="double-icon">
+                    <div class="test-desc-wrapper">       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-container">
+            <button class="button-slanted">               
+                <span class="button-slanted-content">
+                    View All
+                </span>
+            </button>
+            <div class="arrow-btns-wrapper">         
+                <button class="button-slanted" id="prevBtn">               
                     <span class="button-slanted-content">
-                        View All
+                        <img src="./assets/images/lt-icon.svg" alt="">
                     </span>
                 </button>
-                <div class="arrow-btns-wrapper">         
-                    <button class="button-slanted">               
-                        <span class="button-slanted-content">
-                            <img src="./assets/images/lt-icon.svg" alt="">
-                        </span>
-                    </button>
-                    <button class="button-slanted">               
-                        <span class="button-slanted-content">
-                            <img src="./assets/images/gt-icon.svg" alt="">
-                        </span>
-                    </button>
-                </div>
+                <button class="button-slanted" id="nextBtn">               
+                    <span class="button-slanted-content">
+                        <img src="./assets/images/gt-icon.svg" alt="">
+                    </span>
+                </button>
             </div>
         </div>
     </section>
@@ -195,10 +207,19 @@
                 tempor invidunt ut
             </p>
             <div class="story-left-bottom-wrapper">
-                <img src="" alt="" >
+                <div class="thumbVideo-Wrapper">
+                    <video src="./assets/video/demo-video.mp4"  class="thum-video"></video>
+                </div>
                 <button id="playVideo-btn">Play Video</button>
             </div>
            </div>
+           <div class="video-container">
+             <video src="./assets/video/demo-video.mp4" 
+             controls = "true"
+             class="Video"
+             ></video>
+             <span class="close">X</span>
+            </div>
         </div>
     </section>
  <!-- Story Section End -->
@@ -302,5 +323,16 @@
     </section>
  <!-- Footer Section End -->
 
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        new Glide('.glide',{
+            type: 'carousel',
+            startAt: 0,
+            perView: 4,
+            gap:48,
+        }).mount()
+    </script>
 </body>
 </html>
