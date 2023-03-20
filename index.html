@@ -13,13 +13,15 @@
     <!-- Navbar Start -->
     <nav class="navbar">
         <div class="logo-container">
-            <img src="./assets/images/cargo-transport.svg" alt="logo">
+            <a href="#home">
+                <img src="./assets/images/cargo-transport.svg" alt="logo">
+            </a>
         </div>
         <ul>
             <li><a href="#about">About</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Careers</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <!-- <div class="app-btnWapper"> -->
             <button id="app-btn" class="button-slanted">
@@ -30,7 +32,7 @@
     <!-- Navbar End -->
 
     <!-- Landing Section Start -->
-    <section class="landing-section">
+    <section class="landing-section" id="home">
         <div class="left-landing-container">
             <div class="landingWrapper">
                 <div class="textWrapper">
@@ -233,7 +235,7 @@
  <!-- Follow Us Section End -->
 
  <!-- Contact Section Start -->
-    <section class="contact-container">
+    <section class="contact-container" id="contact">
         <div class="contact-leftWrapper">
             <h2>Join Our Team</h2>
             <p>Lorem ipsum dolor sit amet, consetetur
@@ -305,7 +307,11 @@
         </div>
     </section>
  <!-- Footer Section End -->
-
+    <a href="#home" >
+        <div class="backToTop" id="#home">
+            <span> -> </span>
+        </div>
+    </a>
     <script src="index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>

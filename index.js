@@ -45,6 +45,7 @@ const playBtn = document.getElementById("playVideo-btn");
 const videoContainer = document.querySelector(".video-container");
 const close = document.querySelector(".close");
 const video = document.querySelector(".Video");
+const BackToTopBtn = document.querySelector(".backToTop");
 
 let i = 0;
 let j = testimonialsData.length;
@@ -106,6 +107,11 @@ window.onscroll = function() {
         nav.classList.add("sticky");
     }else {
         nav.classList.remove("sticky");
+    }
+    if(window.scrollY > 680){
+        BackToTopBtn.classList.add('show')
+    }else{
+        BackToTopBtn.classList.remove('show')
     }
     increaseCount()
 };

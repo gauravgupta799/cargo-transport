@@ -32,6 +32,53 @@ body{
    background-image: url("./assets/images/textured-bg.svg");
    background-repeat: no-repeat;
    background-size: cover;
+   position: relative;
+}
+.backToTop{
+    width: 40px;
+    height: 40px;
+    background-color: #0c1536;
+    border-radius: 50%;
+    border:1px solid rgb(167, 193, 229);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 3%;
+    bottom: 2.5%;
+    display: none;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+.backToTop.show{
+    display: block;
+}
+.backToTop > span {
+    display: flex;
+    align-items: center;
+    color:white;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+
+@media screen and (max-width:468px){
+    .backToTop{
+        width: 80px;
+        height: 80px;
+    }
+    .backToTop > span {
+        font-size: 2.5rem;
+    }
 }
 a{
     text-decoration: none;
@@ -184,6 +231,7 @@ a:hover{
     background-repeat: no-repeat;
     background-position:right;
     background-size: cover;
+    margin-right: -94px;
     /* z-index:0; */
 }
 .left-landing-container{
@@ -312,9 +360,9 @@ a:hover{
 }
 .aboutRight-side >h3{
     font-family: "blinker";
-    font-size: 28px;
+    font-size: 40px;
     font-weight: bold;
-    line-height: 48px;
+    /* line-height: 48px; */
     font-style: normal;
     text-align: left;
     color: #0c1536;
