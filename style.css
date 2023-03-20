@@ -8,6 +8,21 @@
 html {
     scroll-behavior: smooth;
 }
+html::-webkit-scrollbar{
+    width: 7px;
+}
+html::-webkit-scrollbar-track{
+    background:rgb(167, 193, 229);
+}
+html::-webkit-scrollbar-thumb{
+    background-color: #0C1536;
+    border-radius: 20px;
+    border:1px solid rgb(167, 193, 229);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
 body{
    margin: 0;
    padding: 0;
@@ -445,8 +460,8 @@ a:hover{
     overflow: hidden;
     flex-wrap: wrap;
 }
-.soltn-bottom-container > .images-container > .img-wrapper{
-    /* margin: 0px -60px; */
+.images-container{
+    cursor: grab;
 }
 
 @media only screen and (max-width:468px){
