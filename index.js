@@ -75,7 +75,7 @@ window.onload = displayTestimonials;
 let inc = [];
 function intervalFunc(){
     for(let i = 0; i < stat.length; i++){
-        inc.push(1);
+        inc.push(i);
         if(inc[i] != stat[i].getAttribute("data-max")){
             inc[i]++;
         }
@@ -87,9 +87,9 @@ function increaseCount(){
     const timer = setInterval(()=>{
         let topElem = about.offsetTop;
         let btmElem = about.offsetTop + about.clientHeight;
-        let topScreem = window.pageYOffset;
-        let btmScreem = window.pageYOffset + window.innerHeight;
-        if(btmScreem > topElem && topScreem < btmElem){
+        let topScreen = window.pageYOffset;
+        let btmScreen = window.pageYOffset + window.innerHeight;
+        if(btmScreen > topElem && topScreen < btmElem){
             intervalFunc();
         }else{
             clearInterval(timer);
